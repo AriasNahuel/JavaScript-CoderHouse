@@ -28,6 +28,10 @@ class ProductoRepository {
         ];
     }
 
+    getProductById(id) {
+        return this.productos.filter(producto => producto.id === id)[0];
+    }
+
     findAll() {
         return this.productos;
     }
@@ -53,8 +57,10 @@ class Carrito {
         this.items = [];
     }
 
-    agregarItem(producto, cantidad) {
-        this.items.push(new ItemCarrito(producto, cantidad));
+    agregarItem(producto) {
+        this.items.push(new ItemCarrito(producto, 1));
+        console.log("Producto agregado exitosamente");
+        console.log(producto["nombreProducto"]);
     }
 
     confirmarCarrito() {
@@ -69,16 +75,15 @@ class Carrito {
         this.items.forEach((item) => {
             total = + item.getSubtotal();
         });
-
-        //let total = this.items.reduce((sum, item) => sum + item.subtotal, 0);
-        console.log(`Total a pagar: $${total}`);
-        document.write(`------------------------<br>`);
-        document.write(`<b>Total a pagar:</b> $${total}`);
     }
 
     vaciarCarrito() {
         this.items = [];
         //cartel de carrito vacío
+    }
+
+    getItems() {
+        return this.items;
     }
 }
 
@@ -102,12 +107,29 @@ function vaciarCarrito() {
 function agregarItem(id) {
     mensajeAgregarCarrito();
     beepAgregarItem();
-
-    carrito.agregarItem("a","1");
+    carrito.agregarItem(repositorio.getProductById(id));
+    listarCarrito();
 }
 
 function vistaModalCarrito() {
 
+}
+
+
+function listarCarrito() {
+    const tableCart = document.querySelector(".row");
+    $('.table > tbody').empty();
+    let itemsCarrito = carrito.getItems();
+    for (const itemCarrito of itemsCarrito) {
+        tableCart.insertRow().innerHTML = `     
+                                <tr id="${itemCarrito.id}">
+                                <td>${itemCarrito.producto.nombreProducto}</td>
+                                <td>${itemCarrito.cantidad}</td>
+                                <td>${itemCarrito.producto.precio}</td>
+                                <td>${itemCarrito.getSubtotal()}</td>
+                                </tr>
+                                `;
+    }
 }
 
 carrito.calcularTotal();
@@ -124,4 +146,5 @@ for (const producto of productos) {
                             <b>$${producto.precio}</b>
                             <button class="boton" onclick="agregarItem(${producto.id})">Agregar al carrito</button>`;
     container.appendChild(contenedor);
-} 
+}
+
