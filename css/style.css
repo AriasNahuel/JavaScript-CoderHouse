@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(134, 29, 29);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.boton {
+    border: 1px solid #134595;
+    padding: 5px;
+    background-color: #134595;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 50px;
+}
+
+.products .card {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card {
+    display: flex;
+    width: 330px;
+    height: 330px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4 {
+    font-weight: 600;
+}
+
+.boton {
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+}
+
+header {
+    background-color: rgb(134, 29, 29);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 15px;
+    height: 91px;
+    z-index: 1000;
+}
+
+header h1 {
+    /*copiado*/
+    font-family: "Sedgwick Ave Display";
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    height: 75px;
+    line-height: 75px;
+    background-color: rgb(134, 29, 29);
+}
+
+nav .navbar-brand {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+nav .nav-list {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-list .nav-item {
+    cursor: pointer;
+    height: 100%;
+    padding: 0 20px;
+    transition: 0.4s;
+}
+
+nav .nav-list .nav-item:hover {
+    background: #000000;
+}
+
+nav .nav-list .nav-link {
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px 10px 0 0;
+    cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 10%;
+    transition: 0.4s;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    font-family: "Noto Sans";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+footer div {
+    margin-bottom: 30px;
+}
+
+footer div a {
+    margin: 5px;
+}
+
+.inputNav {
+    display: none;
+}
+
+.gradienteHeader {
+    background-image: linear-gradient(to right, rgb(177, 18, 18), rgb(77, 3, 3));
+}
+
+@media (max-width: 962px) {
+    header {
+        background-image: linear-gradient(to right, rgb(177, 18, 18), rgb(77, 3, 3));
+    }
+
+    nav {
+        background-color: rgb(134, 29, 29);
+    }
+
+    nav .nav-list {
+        display: grid;
+        position: absolute;
+        background-image: linear-gradient(to right, rgb(177, 18, 18), rgb(77, 3, 3));
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: 0.6s;
+    }
+
+    nav .nav-list .nav-item {
+        padding-left: 35px;
+    }
+
+    nav .navbar-toggler {
+        display: grid !important;
+        align-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 2px 10px 0 0;
+    }
+
+    main {
+        margin-top: 105px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    main {
+        margin-top: 105px;
+    }
+}
