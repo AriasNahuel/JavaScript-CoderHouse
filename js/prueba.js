@@ -16,7 +16,7 @@ function mensajeAgregarCarrito() {
 
 function mensajeEliminarCarrito(){
     Swal.fire({
-        icon: 'warnin',
+        icon: 'warning',
         title: 'Producto eliminado del carrito',
         toast: true,
         position: 'top-end',
