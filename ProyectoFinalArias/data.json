@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "marca": "Maruchan",
+        "nombre": "Ramen Carne",
+        "precio": 1300,
+        "imagen": "0001 Ramen Maruchan - Carne.jpg"
+    },
+    {
+        "id": 2,
+        "marca": "Maruchan",
+        "nombre": "Ramen Pollo",
+        "precio": 1300,
+        "imagen": "0002 Ramen Maruchan - Pollo.jpg"
+    },
+    {
+        "id": 3,
+        "marca": "Maruchan",
+        "nombre": "Ramen Mariscos",
+        "precio": 1300,
+        "imagen": "0003 Ramen Maruchan - Camaron.jpg"
+    },
+    {
+        "id": 4,
+        "marca": "Samyang",
+        "nombre": "Ramen Natural",
+        "precio": 800,
+        "imagen": "0004 Ramen Samyang - Natural.jpg"
+    },
+    {
+        "id": 5,
+        "marca": "Samyang",
+        "nombre": "Ramen Mariscos",
+        "precio": 1500,
+        "imagen": "0005 Ramen Samyang - Mariscos.jpg"
+    },
+    {
+        "id": 6,
+        "marca": "Samyang",
+        "nombre": "Ramen Carne",
+        "precio": 1500,
+        "imagen": "0006 Ramen Samyang - Carne.jpg"
+    },
+    {
+        "id": 7,
+        "marca": "Nutrition & Taste",
+        "nombre": "Gaseosa Lima",
+        "precio": 1800,
+        "imagen": "0007 Gaseosa Lima.png"
+    },
+    {
+        "id": 8,
+        "marca": "Nutrition & Taste",
+        "nombre": "Gaseosa Melón",
+        "precio": 1800,
+        "imagen": "0008 Gaseosa Melón.png"
+    },
+    {
+        "id": 9,
+        "marca": "Nutrition & Taste",
+        "nombre": "Gaseosa Sandía",
+        "precio": 1800,
+        "imagen": "0009 Gaseosa Sandía.png"
+    },
+    {
+        "id": 10,
+        "marca": "Hao Wei Dao",
+        "nombre": "Jugo Ananá",
+        "precio": 1100,
+        "imagen": "0010 Jugo Ananá.jpg"
+    },
+    {
+        "id": 11,
+        "marca": "Hao Wei Dao",
+        "nombre": "Jugo Mango",
+        "precio": 1100,
+        "imagen": "0011 Jugo Mango.jpg"
+    },
+    {
+        "id": 12,
+        "marca": "Hao Wei Dao",
+        "nombre": "Jugo Uva",
+        "precio": 1100,
+        "imagen": "0012 Jugo Uva.jpg"
+    },
+    {
+        "id": 13,
+        "marca": "Chum Churum",
+        "nombre": "Soju Natural",
+        "precio": 2800,
+        "imagen": "0013 Soju Natural.jpg"
+    },
+    {
+        "id": 14,
+        "marca": "Chum Churum",
+        "nombre": "Soju Manzana",
+        "precio": 3200,
+        "imagen": "0014 Soju Manzana.jpg"
+    },
+    {
+        "id": 15,
+        "marca": "Chum Churum",
+        "nombre": "Soju Uva",
+        "precio": 3200,
+        "imagen": "0015 Soju Uva.jpg"
+    }
+]

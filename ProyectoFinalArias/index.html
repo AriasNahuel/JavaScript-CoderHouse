@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>TokyoBuy | Tienda de Productos Asiáticos</title>
+</head>
+
+<body>
+  <div class="botonCarrito">
+    <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-outline-danger"><i
+        class="fas fa-shopping-cart fa-3x"></i></a>
+  </div>
+
+  <header class="gradienteHeader">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TokyoBuy</a>
+    </div>
+
+  </header>
+  <br><br>
+
+  <div class="container">
+    <div id="productos" class="row">
+    </div>
+  </div>
+
+
+
+  <!--Modal Carrito-->
+  <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal-body">
+
+        </div>
+        <div class="row ml-ato">
+          <p id="precioTotal"></p>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" id="botonVaciar" class="btn btn-danger" data-bs-dismiss="modal">Vaciar Carrito</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+  <footer>
+    <div>
+      <br>
+      <a href="https://es-la.facebook.com/" target="blank"><img src="./assets/facebook.png" alt="Logo Facebook"></a>
+      <a href="https://www.instagram.com/" target="blank"><img src="./assets/instagram.png" alt="Logo Instagram"></a>
+      <a href="https://twitter.com/?lang=es" target="blank"><img src="./assets/twitter.png" alt="Logo Twitter"></a>
+    </div>
+    <p>Todos los derechos reservados</p>
+  </footer>
+
+  <script src="productos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
